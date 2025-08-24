@@ -1,20 +1,28 @@
-# robots.txt avancé pour khilazuzahab.netlify.app
+# robots.txt pour khilazuzahab.netlify.app
 
-# Tous les robots
+# Règles générales pour tous les robots
 User-agent: *
-
-# Bloquer certains dossiers sensibles (exemples)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /scripts/
-
-# Autoriser l'accès au reste du site
 Allow: /
 
-# Lien vers le sitemap
+# Sitemap principal
 Sitemap: https://khilazuzahab.netlify.app/sitemap.xml
 
-# Instructions spécifiques pour Googlebot (facultatif)
+# Instructions spécifiques pour Googlebot
 User-agent: Googlebot
 Allow: /
+# Crawl-delay n'est pas reconnu par Google, seulement par Bing/Yandex
+# On peut le laisser pour les autres bots
 Crawl-delay: 10
+
+# (Optionnel) Bloquer certains robots connus pour scraper
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
