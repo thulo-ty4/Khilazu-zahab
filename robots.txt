@@ -1,0 +1,20 @@
+# robots.txt avancé pour khilazuzahab.netlify.app
+
+# Tous les robots
+User-agent: *
+
+# Bloquer certains dossiers sensibles (exemples)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /scripts/
+
+# Autoriser l'accès au reste du site
+Allow: /
+
+# Lien vers le sitemap
+Sitemap: https://khilazuzahab.netlify.app/sitemap.xml
+
+# Instructions spécifiques pour Googlebot (facultatif)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 10
