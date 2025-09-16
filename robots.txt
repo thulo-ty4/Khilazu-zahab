@@ -8,7 +8,7 @@ Disallow: /scripts/
 Allow: /
 
 # Sitemap principal
-Sitemap: https://khilazuzahab.netlify.app/sitemap.xml
+Sitemap: http://khilazuzahab.netlify.app/sitemap.xml
 
 # Instructions spécifiques pour Googlebot
 User-agent: Googlebot
