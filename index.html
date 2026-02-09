@@ -1,212 +1,122 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مكتبة خلاص الذهب للشيخ الحاج مالك سي - قراءة فصول الكتاب بسهولة مع الوضع الليلي">
+    <title>خلاص الذهب - El Hadji Malick Sy</title>
 
-<titel> khilazu zahab</titel>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- Font Awesome pour l'icône de recherche -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Script Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4368298895659451"  
-     crossorigin="anonymous"></script>
+    <!-- CSS Centralisé -->
+    <link rel="stylesheet" href="style.css">
 
-<style>
-  body {
-    font-family: 'Times New Roman', serif;
-    background: #f9f9f9;
-    color: #111;
-    text-align: center;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-  }
-
-  .content {
-    max-width: 900px;
-    margin: auto;
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  .content h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-
-  header h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-    color: #1a1a1a;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-
-  .intro p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  .search-box {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .search-box input {
-    padding: 10px 15px;
-    width: 60%;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-
-  .chapters-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin: 20px 0;
-    text-align: right;
-  }
-
-  .chapter-card {
-    background: #f0f4f8;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .chapter-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  }
-
-  .chapter-card a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
-    display: block;
-  }
-
-  .chapter-number {
-    font-weight: bold;
-    margin-left: 5px;
-    color: #e67e22;
-  }
-
-  footer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #888;
-  }
-
-  @media screen and (max-width: 600px) {
-    .content { padding: 20px; }
-    .content h2 { font-size: 22px; }
-    header h1 { font-size: 26px; }
-    .subtitle { font-size: 16px; }
-    .intro p { font-size: 16px; }
-    .search-box input { width: 80%; }
-    .chapter-card { padding: 12px; }
-  }
-</style>
+    <!-- Script Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4368298895659451" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="content">
+<div class="container">
+    <header>
+        <button class="theme-toggle" id="themeToggle" title="تبديل الوضع الليلي">
+            <i class="fas fa-moon"></i>
+        </button>
 
-  <!-- AdSense en haut -->
-  <ins class="adsbygoogle"
-       style="display:block; margin-bottom:20px;"
-       data-ad-client="ca-pub-4368298895659451"
-       data-ad-slot="6482904758"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+        <!-- AdSense en haut -->
+        <ins class="adsbygoogle"
+             style="display:block; margin-bottom:20px;"
+             data-ad-client="ca-pub-4368298895659451"
+             data-ad-slot="6482904758"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 
-  <h2>الفصل في ذكر</h2>
+        <h1>خلاص الذهب</h1>
+        <p class="subtitle">الشيخ الحاج مالك سي</p>
+    </header>
 
-  <header>
-    <h1>خلاص الذهب</h1>
-    <p class="subtitle">El Hadji Malick Sy</p>
-  </header>
+    <div class="content-card">
+        <div class="intro">
+            <p>مرحباً بكم في مكتبة "خلاص الذهب" للشيخ الحاج مالك سي. هنا يمكنكم الوصول إلى جميع فصول الكتاب بسهولة ويسر.</p>
+        </div>
 
-  <div class="intro">
-    <p>مرحباً بكم في مكتبة "خلاص الذهب" للشيخ الحاج مالك سي. هنا يمكنكم الوصول إلى جميع فصول الكتاب بسهولة ويسر.</p>
-  </div>
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="searchInput" placeholder="ابحث عن فصل معين...">
+        </div>
 
-  <div class="search-box">
-    <i class="fas fa-search"></i>
-    <input type="text" id="searchInput" placeholder="ابحث عن فصل معين...">
-  </div>
+        <div id="chaptersGrid" class="chapters-grid">
+            <!-- Les chapitres seront insérés ici par JavaScript -->
+        </div>
+    </div>
 
-  <div class="chapters-grid"></div>
+    <!-- AdSense en bas -->
+    <ins class="adsbygoogle"
+         style="display:block; margin-top:20px;"
+         data-ad-client="ca-pub-4368298895659451"
+         data-ad-slot="6482904758"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
 
-  <!-- AdSense en bas -->
-  <ins class="adsbygoogle"
-       style="display:block; margin-top:20px;"
-       data-ad-client="ca-pub-4368298895659451"
-       data-ad-slot="6482904758"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-       (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
-  <footer>
-    <p>جميع الحقوق محفوظة © 2023 | خلاز الذهب - El Hadji Malick Sy</p>
-  </footer>
+    <footer>
+        <p>جميع الحقوق محفوظة © 2023 | خلاص الذهب - El Hadji Malick Sy</p>
+    </footer>
 </div>
 
+<script src="script.js"></script>
 <script>
+// Chapters Logic
 document.addEventListener('DOMContentLoaded', function() {
-  const chaptersContainer = document.querySelector('.chapters-grid');
-  const searchInput = document.getElementById('searchInput');
-  let chapters = [];
+    const chaptersContainer = document.getElementById('chaptersGrid');
+    const searchInput = document.getElementById('searchInput');
+    let chapters = [];
 
-  for (let i = 1; i <= 29; i++) {
-    chapters.push({
-      number: i,
-      title: `الفصل ${i}`,
-      link: `chapter${i.toString().padStart(2,'0')}.html`
+    for (let i = 1; i <= 29; i++) {
+        chapters.push({
+            number: i,
+            title: `الفصل ${i.toString().padStart(2, '0')}`,
+            link: `chapter${i.toString().padStart(2, '0')}.html`
+        });
+    }
+
+    function displayChapters(chaptersArray) {
+        chaptersContainer.innerHTML = '';
+        chaptersArray.forEach(c => {
+            const div = document.createElement('div');
+            div.className = 'chapter-card';
+            div.innerHTML = `
+                <a href="${c.link}">
+                    <span class="chapter-number">${c.number}</span>
+                    <span class="chapter-title-text">${c.title}</span>
+                </a>
+            `;
+            chaptersContainer.appendChild(div);
+        });
+    }
+
+    searchInput.addEventListener('input', function() {
+        const term = this.value.trim().toLowerCase();
+        if (!term) { displayChapters(chapters); return; }
+        const filtered = chapters.filter(c =>
+            c.title.toLowerCase().includes(term) || c.number.toString().includes(term)
+        );
+        displayChapters(filtered);
     });
-  }
 
-  function displayChapters(chaptersArray) {
-    chaptersContainer.innerHTML = '';
-    chaptersArray.forEach(c => {
-      const div = document.createElement('div');
-      div.className = 'chapter-card';
-      div.innerHTML = `<a href="${c.link}"><span class="chapter-number">${c.number}</span>${c.title}</a>`;
-      chaptersContainer.appendChild(div);
-    });
-  }
-
-  searchInput.addEventListener('input', function() {
-    const term = this.value.trim().toLowerCase();
-    if (!term) { displayChapters(chapters); return; }
-    const filtered = chapters.filter(c =>
-      c.title.toLowerCase().includes(term) || c.number.toString().includes(term)
-    );
-    displayChapters(filtered);
-  });
-
-  displayChapters(chapters);
+    displayChapters(chapters);
 });
 </script>
 
 </body>
-  </html>
+</html>
