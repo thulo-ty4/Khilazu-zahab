@@ -3,120 +3,62 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="مكتبة خلاص الذهب للشيخ الحاج مالك سي - قراءة فصول الكتاب بسهولة مع الوضع الليلي">
-    <title>خلاص الذهب - El Hadji Malick Sy</title>
-
-    <!-- Google Fonts -->
+    <meta name="description" content="خلاص الذهب - قصيدة في مدح خير البرية للشيخ الحاج مالك سي">
+    <title>خلاص الذهب - القائمة الرئيسية</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- CSS Centralisé -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Script Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4368298895659451" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <div class="container">
     <header>
         <button class="theme-toggle" id="themeToggle" title="تبديل الوضع الليلي">
             <i class="fas fa-moon"></i>
         </button>
-
-        <!-- AdSense en haut -->
-        <ins class="adsbygoogle"
-             style="display:block; margin-bottom:20px;"
-             data-ad-client="ca-pub-4368298895659451"
-             data-ad-slot="6482904758"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-             (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
         <h1>خلاص الذهب</h1>
         <p class="subtitle">الشيخ الحاج مالك سي</p>
     </header>
-
     <div class="content-card">
-        <div class="intro">
-            <p>مرحباً بكم في مكتبة "خلاص الذهب" للشيخ الحاج مالك سي. هنا يمكنكم الوصول إلى جميع فصول الكتاب بسهولة ويسر.</p>
-        </div>
-
-        <div class="search-box">
-            <i class="fas fa-search"></i>
-            <input type="text" id="searchInput" placeholder="ابحث عن فصل معين...">
-        </div>
-
-        <div id="chaptersGrid" class="chapters-grid">
-            <!-- Les chapitres seront insérés ici par JavaScript -->
-        </div>
+        <h2 class="chapter-title">فهرس الفصول</h2>
+        <ul class="index-list">
+            <li><a href="chapter01.html">الفصل 01</a></li>
+            <li><a href="chapter02.html">الفصل 02</a></li>
+            <li><a href="chapter03.html">الفصل 03</a></li>
+            <li><a href="chapter04.html">الفصل 04</a></li>
+            <li><a href="chapter05.html">الفصل 05</a></li>
+            <li><a href="chapter06.html">الفصل 06</a></li>
+            <li><a href="chapter07.html">الفصل 07</a></li>
+            <li><a href="chapter08.html">الفصل 08</a></li>
+            <li><a href="chapter09.html">الفصل 09</a></li>
+            <li><a href="chapter10.html">الفصل 10</a></li>
+            <li><a href="chapter11.html">الفصل 11</a></li>
+            <li><a href="chapter12.html">الفصل 12</a></li>
+            <li><a href="chapter13.html">الفصل 13</a></li>
+            <li><a href="chapter14.html">الفصل 14</a></li>
+            <li><a href="chapter15.html">الفصل 15</a></li>
+            <li><a href="chapter16.html">الفصل 16</a></li>
+            <li><a href="chapter17.html">الفصل 17</a></li>
+            <li><a href="chapter18.html">الفصل 18</a></li>
+            <li><a href="chapter19.html">الفصل 19</a></li>
+            <li><a href="chapter20.html">الفصل 20</a></li>
+            <li><a href="chapter21.html">الفصل 21</a></li>
+            <li><a href="chapter22.html">الفصل 22</a></li>
+            <li><a href="chapter23.html">الفصل 23</a></li>
+            <li><a href="chapter24.html">الفصل 24</a></li>
+            <li><a href="chapter25.html">الفصل 25</a></li>
+            <li><a href="chapter26.html">الفصل 26</a></li>
+            <li><a href="chapter27.html">الفصل 27</a></li>
+            <li><a href="chapter28.html">الفصل 28</a></li>
+            <li><a href="chapter29.html">الفصل 29</a></li>
+        </ul>
     </div>
-
-    <!-- AdSense en bas -->
-    <ins class="adsbygoogle"
-         style="display:block; margin-top:20px;"
-         data-ad-client="ca-pub-4368298895659451"
-         data-ad-slot="6482904758"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
     <footer>
         <p>جميع الحقوق محفوظة © 2023 | خلاص الذهب - El Hadji Malick Sy</p>
     </footer>
 </div>
-
 <script src="script.js"></script>
-<script>
-// Chapters Logic
-document.addEventListener('DOMContentLoaded', function() {
-    const chaptersContainer = document.getElementById('chaptersGrid');
-    const searchInput = document.getElementById('searchInput');
-    let chapters = [];
-
-    for (let i = 1; i <= 29; i++) {
-        chapters.push({
-            number: i,
-            title: `الفصل ${i.toString().padStart(2, '0')}`,
-            link: `chapter${i.toString().padStart(2, '0')}.html`
-        });
-    }
-
-    function displayChapters(chaptersArray) {
-        chaptersContainer.innerHTML = '';
-        chaptersArray.forEach(c => {
-            const div = document.createElement('div');
-            div.className = 'chapter-card';
-            div.innerHTML = `
-                <a href="${c.link}">
-                    <span class="chapter-number">${c.number}</span>
-                    <span class="chapter-title-text">${c.title}</span>
-                </a>
-            `;
-            chaptersContainer.appendChild(div);
-        });
-    }
-
-    searchInput.addEventListener('input', function() {
-        const term = this.value.trim().toLowerCase();
-        if (!term) { displayChapters(chapters); return; }
-        const filtered = chapters.filter(c =>
-            c.title.toLowerCase().includes(term) || c.number.toString().includes(term)
-        );
-        displayChapters(filtered);
-    });
-
-    displayChapters(chapters);
-});
-</script>
-
 </body>
 </html>
